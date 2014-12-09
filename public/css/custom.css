@@ -1,0 +1,79 @@
+html, body, .container {
+    height: 100%;
+}
+
+/* --------------- Header ------------------ */
+.container-calendar {
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    height: 10%;
+    font: 700 24px courier;
+}
+/* --------------- /Header ------------------ */
+
+/* ---------------- Arrow ------------------- */
+.arrow-wrapper {
+    display: table;
+    height: 90%;
+}
+
+.arrow-wrapper-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.arrow-left {
+    text-align: right;
+}
+
+.arrow-right {
+    text-align: left;
+}
+
+.arrow {
+    opacity: .6;
+    font-size: 50px;
+}
+
+.arrow:hover {
+    opacity: .9;
+}
+/* ---------------- /Arrow ------------------- */
+
+/* ---------------- Table -------------------- */
+.days-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+/* ---------------- /Table ------------------- */
+
+/* ---------------- Table-row ---------------- */
+.calendar-table {
+    height: 90%;
+}
+/* ---------------- /Table-row --------------- */
+
+/* ---------------- Cells -------------------- */
+.days-table th{
+    border: 1px solid #AAA;
+    background-color: #deedf7;
+    text-align: center;
+}
+
+
+.cell {
+    width: calc(100% / 7);
+    height: calc(100% / 6);
+    border: 1px solid #AAA;
+}
+
+.cell:hover {
+    background-color: #DDD;
+}
+/* ---------------- /Cells ------------------- */

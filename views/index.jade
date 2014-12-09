@@ -21,10 +21,15 @@ html
 
       .col-md-8.calendar-table
         table.days-table
-          each n in [0, 1, 2, 3, 4, 5, 6]
-            tr.calendar-table-row
-              each x in [0, 1, 2, 3, 4, 5, 6]
-                td.cell
+          thead
+            each dText in ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+              th=dText
+
+          tbody
+            each n in [0, 1, 2, 3, 4, 5, 6]
+              tr.calendar-table-row
+                each x in [0, 1, 2, 3, 4, 5, 6]
+                  td.cell
       .col-md-2.arrow-wrapper
         .arrow-wrapper-cell
           .col-md-2.arrow.arrow-right
