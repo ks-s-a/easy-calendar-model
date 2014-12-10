@@ -33,9 +33,15 @@ $(function(){
 
         show: function(options) {
             this.timestamp = options.timestamp;
-            var date = new Date(+this.timestamp);
+            var dateString = (new Date(+this.timestamp)).toDateString();
 
-            $("#modal-event-header").html('Event for ' + date.toDateString());
+            $("#modal-event-header").html('Event for ' +
+                (dateString[8] == '0' ? dateString[9] : dateString.slice(8,10) ) +
+                ' '+
+                dateString.slice(4,7)+
+                ' '+
+                dateString.slice(11,15)
+            );
             if (options.comment)
                 $("#modal-comment").val(options.comment);
 
