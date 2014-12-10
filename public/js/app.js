@@ -1,6 +1,4 @@
 $(function(){
-    console.log('Module Started!');
-
     var ModalWindow = Backbone.View.extend({
         initialize: function() {
             var self = this;
@@ -11,7 +9,7 @@ $(function(){
                         '<div class="modal-content">'+
                             '<div class="modal-header">'+
                                 '<button id="modal-close-icon" type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>'+
-                                '<h4 class="modal-title">Event:</h4>'+
+                                '<h4 id="modal-event-header" class="modal-title">Event:</h4>'+
                             '</div>'+
                             '<div class="modal-body">'+
                                 '<input id="modal-comment" type="text" class="form-control" id="comment-text">'+
@@ -35,7 +33,9 @@ $(function(){
 
         show: function(options) {
             this.timestamp = options.timestamp;
+            var date = new Date(+this.timestamp);
 
+            $("#modal-event-header").html('Event for ' + date.toDateString());
             if (options.comment)
                 $("#modal-comment").val(options.comment);
 

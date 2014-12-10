@@ -12,7 +12,6 @@ html {
     user-select: none;
 }
 
-/* --------------- Header ------------------ */
 .container-calendar {
     padding: 5%;
     width: 100%;
@@ -24,9 +23,7 @@ header {
     height: 10%;
     font: 700 24px courier;
 }
-/* --------------- /Header ------------------ */
 
-/* ---------------- Arrow ------------------- */
 .arrow-wrapper {
     display: table;
     height: 90%;
@@ -53,9 +50,7 @@ header {
 .arrow:hover {
     opacity: .9;
 }
-/* ---------------- /Arrow ------------------- */
 
-/* ---------------- Table -------------------- */
 .days-table,
 .days-table tbody {
     width: 100%;
@@ -63,10 +58,6 @@ header {
     border-collapse: collapse;
 }
 
-
-/* ---------------- /Table ------------------- */
-
-/* ---------------- Table-row ---------------- */
 .calendar-table {
     height: 90%;
 }
@@ -80,9 +71,7 @@ header {
     height: calc(100% / 7);
     width: 100%;
 }
-/* ---------------- /Table-row --------------- */
 
-/* ---------------- Cells -------------------- */
 .days-table th{
     border: 1px solid #AAA;
     background-color: #deedf7;
@@ -107,4 +96,3 @@ header {
 .cell:hover {
     background-color: #DDD;
 }
-/* ---------------- /Cells ------------------- */
